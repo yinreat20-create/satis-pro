@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  output: 'export',
+  images: {
+    unoptimized: true,
   },
-  images: { unoptimized: true },
-  experimental: {
-    serverComponentsExternalPackages: ['firebase', '@firebase/app', '@firebase/auth', '@firebase/firestore'],
-  },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
